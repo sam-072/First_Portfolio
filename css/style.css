@@ -1,0 +1,200 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+
+body{
+    font-family:'poppins' , sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialised;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,80% 88%, 0 100%);
+
+}
+
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin: 0 400px;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration:none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+.hero .pic img{
+    width: 400px;
+    height: 500px;
+}
+
+.hero .intro{
+    color: var(--pure);
+
+}
+
+.hero .intro h1{
+    font-size: larger;
+    font-weight: 130;
+    color: var(--primary);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero .intro h2{
+    font-size:large;
+    color:var(--primary);
+    font-weight:100;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero .intro p{
+    font-size:medium;
+    line-height:1.5;
+    margin-left: 3rem;
+    margin: bottom 2rem;
+}
+
+section{
+    padding:6rem 0;
+}
+section.about .about-me-pic{
+    height:500px;
+    width: 600px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font: size 1.6rem;
+    font-weight:400;
+}
+section.about h1 span{
+    color:var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight:400;
+}
+section.about p{
+    color:var(--ternary);
+    line-height: 1.8;
+}
+/* heading class */
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin:40px 0px;
+}
+
+/* projects section*/
+#projects{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(80, 77, 77, 0.9);
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color:white;
+    border:none;
+    box-shadow: 0 0 20px rgb(97, 81, 153);
+}
+.box img{
+    width:80px;
+    height: 80px;
+    background-color: white;
+    padding:10px;
+}
+
+/* Contact section */
+#contact {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(20, 19, 19, 0.9);
+    color: white;
+    padding:10px;
+    clip-path:polygon(10% 0,100% 0, 100% 70% , 70% 100% , 40% 100% , 0 70%)
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding:12px;
+    margin:15px;
+    width:295px;
+    border:none;
+    outline:none;
+}
+#msg{
+    width:20%;
+    padding:10px;
+    margin:15px;
+    border:none;
+    outline:none;
+}
+#send{
+    padding:10px;
+    width:10%;
+    margin:40px;
+    border:none;
+    outline:none;
+}
+#send:hover{
+    color: var(--primary);
+}

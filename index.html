@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- this is for font -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- this is for css -->
+</head>
+<body>
+    <header>
+        <div class="container">
+        <nav class="flex items-center justify-between">
+            <div class="left flex items-center">
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#skills">Skills</a>              
+                    <a href="#projects">projects</a>              
+                    <a href="#">GitHub</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero flex items-center just">
+
+            <div class="pic flex-1">
+                <img src="./images/monali2.jpeg" alt="">
+            </div>
+
+            <div class="intro flex-1">
+                <h1>I'm Monali Barange</h1>
+                <!-- span tag is used to give extra style to text -->
+                <h2>Developer</h2>
+                <p>I'm monali Barange currently pursuing btech in information technology from lnct Bhopal
+                    Apart from this I'm trying to explore my interest in various fields</p>
+            </div>
+        </div>
+    </div>
+    </header>
+    <br><br>
+    <section id="projects">
+        <h1 class="headings">PROJECTS</h1>
+        <div class="row">
+            <div class="box">
+                <h2 class="headings">Railway Tickets<br>Reservation</h2>
+                <p>This project is made in c++ language. There are several features in this projects like Tickets booking , Tickets cancellation etc./p>
+            </div>
+            <div class="box">
+                <h2 class="headings">Library Management</h2>
+                <p>This project is made in c++ language. There are several features in this projects like issue  books , Submitting books , Fines etc./p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+        
+    </section>
+
+    
+</body>
+</html>
